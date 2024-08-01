@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo ODS QEST</title>
+    <link rel="stylesheet" href="./css/jogo.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="tela-cheia"></div>
+    <div class="container">
+        <div id="sortear" onclick="coringa()">Clique aqui</div>
+        <div id="pergunta"></div>
+        <div class="grade-container escondido" id="tabuleiro-jogo">
+            <div id="inicio" class="grade-item"><img src="./img/casa1.png" alt="Inicio"></div>
+            <div id="casa1" class="grade-item"><img src="./img/casa2.png" alt="Imagem1"></div>
+            <div id="casa2" class="grade-item"><img src="./img/casa3.png" alt="Imagem2"></div>
+            <div id="casa3" class="grade-item"><img src="./img/casa4.png" alt="Imagem3"></div>
+            <div id="casa4" class="grade-item"><img src="./img/casa5.png" alt="Imagem4"></div>
+            <div id="casa5" class="grade-item"><img src="./img/casa6.png" alt="Imagem5"></div>
+            <div id="desafio1" class="grade-item"><img src="./img/casa7.png" alt="Desafio 1"></div>
+            <div id="casa6" class="grade-item"><img src="./img/casa8.png" alt="Imagem6"></div>
+            <div id="casa7" class="grade-item"><img src="./img/casa9.png" alt="Imagem7"></div>
+            <div id="casa8" class="grade-item"><img src="./img/casa10.png" alt="Imagem8"></div>
+            <div id="desafio2" class="grade-item"><img src="./img/casa11.png" alt="Desafio 2"></div>
+            <div id="casa9" class="grade-item"><img src="./img/casa12.png" alt="Imagem9"></div>
+            <div id="casa10" class="grade-item"><img src="./img/casa13.png" alt="Imagem10"></div>
+            <div id="casa11" class="grade-item"><img src="./img/casa14.png" alt="Imagem11"></div>
+            <div id="desafio3" class="grade-item"><img src="./img/casa15.png" alt="Desafio 3"></div>
+            <div id="casa12" class="grade-item"><img src="./img/casa16.png" alt="Imagem12"></div>
+            <div id="casa13" class="grade-item"><img src="./img/casa17.png" alt="Imagem13"></div>
+            <div id="casa14" class="grade-item"><img src="./img/casa18.png" alt="Imagem14"></div>
+            <div id="casa15" class="grade-item"><img src="./img/casa19.png" alt="Imagem15"></div>
+            <div id="casa16" class="grade-item"><img src="./img/casa20.png" alt="Imagem16"></div>
+            <div id="casa17" class="grade-item"><img src="./img/casa21.png" alt="Imagem17"></div>
+            <div id="fim" class="grade-item"><img src="./img/casa22.png" alt="Fim"></div>
+            <div id="marcador" class="grade-item"><img src="./img/marcador.png" id="marcador-id" alt="marcador" /></div>
+            <div class="tela-jogo" id="quadrado">
+                <div id="container-dado" class="container-dado" onclick="jogarDado()">
+                    <div id="cubo" class="cubo">
+                        <div class="face face1"><img src="./dado/face1.png" alt="Face 1"></div>
+                        <div class="face face2"><img src="./dado/face2.png" alt="Face 2"></div>
+                        <div class="face face3"><img src="./dado/face3.png" alt="Face 3"></div>
+                        <div class="face face4"><img src="./dado/face4.png" alt="Face 4"></div>
+                        <div class="face face5"><img src="./dado/face5.png" alt="Face 5"></div>
+                        <div class="face face6"><img src="./dado/face6.png" alt="Face 6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tela-sucesso" class="hidden">
+            <div class="confetti-container"></div>
+            <h2>Parabéns! Você ganhou o jogo!</h2>
+            <p>Você completou todos os desafios dos 17 Objetivos de Desenvolvimento Sustentável!</p>
+            <button onclick="fecharTelaSucesso()">Fechar</button>
+        </div>
+    </div>
+        <script src="./js/jogo.js"></script>
+        <script src="./js/estilosMarcador.js"></script>
+        <script src="./js/perguntas.js"></script>
+</body>
+
+</html>

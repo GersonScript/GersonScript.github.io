@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #4e4376, #2b5876, #2e1534);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.grade-container {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(7, 50px);
+    height: 75vmin;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.grade-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.grade-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grade-item:hover {
+    transform: scale(1.05);
+}
+
+#quadrado.rolling .dado {
+    animation: roll 2s infinite;
+}
+
+.cubo {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 2s;
+}
+
+.face {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    backface-visibility: hidden;
+}
+
+.face img {
+    width: 100%;
+    height: 100%;
+}
+
+.face1 {
+    transform: rotateY(0deg) translateZ(30px);
+}
+
+.face2 {
+    transform: rotateY(90deg) translateZ(30px);
+}
+
+.face3 {
+    transform: rotateY(180deg) translateZ(30px);
+}
+
+.face4 {
+    transform: rotateY(-90deg) translateZ(30px);
+}
+
+.face5 {
+    transform: rotateX(90deg) translateZ(30px);
+}
+
+.face6 {
+    transform: rotateX(-90deg) translateZ(30px);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cubo.rolling {
+    animation: roll 2s infinite;
+}
+
+p {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #2b5876;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #2c5364;
+}
+
+#tela-cheia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 29, 29, 0.863);
+    z-index: 2;
+    display: none;
+}
+#sortear {
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f6d4df;
+    border-radius: 10px;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+#pergunta {
+    width: 350px;
+    height: 470px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+}
+#formRespostas label {
+    margin-right: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+#formRespostas button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: justify;
+}
+.cronometro {
+    font-size: 2em;
+    margin-top: -1px;
+    margin-left: 260px;
+    transition: color 0.1s;
+}
+#inicio {
+    grid-column: 1;
+    grid-row: 1;
+}
+#casa1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#casa2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#casa3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#casa4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#casa5 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#desafio1 {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+#casa6 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#casa7 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#casa8 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#desafio2 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#casa9 {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+#casa10 {
+    grid-column: 6;
+    grid-row: 2;
+}
+
+#casa11 {
+    grid-column: 6;
+    grid-row: 3;
+}
+
+#desafio3 {
+    grid-column: 6;
+    grid-row: 4;
+}
+
+#casa12 {
+    grid-column: 6;
+    grid-row: 5;
+}
+
+#casa13 {
+    grid-column: 7;
+    grid-row: 5;
+}
+
+#casa14 {
+    grid-column: 8;
+    grid-row: 5;
+}
+
+#casa15 {
+    grid-column: 8;
+    grid-row: 4;
+}
+
+#casa16 {
+    grid-column: 8;
+    grid-row: 3;
+}
+
+#casa17 {
+    grid-column: 8;
+    grid-row: 2;
+}
+
+#fim {
+    grid-column: 8;
+    grid-row: 1;
+}
+#logo{
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 20px;
+    margin-right: -40px;
+}
+#quadrado {
+    grid-column: 4;
+    grid-row: 4;
+    margin-left: -10px;
+}
+
+#marcador {
+    grid-column: 1;
+    grid-row: 1;
+    width: 30px;
+    height: 50px;
+    margin-left: 8px;
+}
+#tela-sucesso {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    position: absolute;
+    z-index: 4;
+    left: -10px;
+}
+
+#tela-sucesso.hidden {
+    display: none;
+}
+
+#tela-sucesso h2 {
+    color: #2c7d59;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#tela-sucesso p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#tela-sucesso button {
+    background-color: #2c7d59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#tela-sucesso button:hover {
+    background-color: #245d45;
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    opacity: 0;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(360deg);
+    }
+}

@@ -1,0 +1,324 @@
+@media (min-width: 800px) {
+    #sortear {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f6d4df;
+        border-radius: 10px;
+        z-index: 2;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 800px) {
+    #pergunta {
+        width: 600px;
+        height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: none;
+        z-index: 2;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    #pergunta h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    #formRespostas {
+        text-align: left;
+    }
+
+    #formRespostas input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    #formRespostas label {
+        margin-right: 30px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    #formRespostas button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #formRespostas button:hover {
+        background-color: #45a049;
+    }
+}
+
+@media (min-width: 800px) {
+    .face {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+        backface-visibility: hidden;
+    }
+
+    .face1 {
+        transform: rotateY(0deg) translateZ(50px);
+    }
+
+    .face2 {
+        transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .face3 {
+        transform: rotateY(180deg) translateZ(50px);
+    }
+
+    .face4 {
+        transform: rotateY(-90deg) translateZ(50px);
+    }
+
+    .face5 {
+        transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .face6 {
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+}
+
+@media (min-width: 800px){
+#tela-sucesso {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        text-align: center;
+        max-width: 400px;
+        position: absolute;
+        z-index: 4;
+        left: 550px;
+    }
+
+    #tela-sucesso.hidden {
+        display: none;
+    }
+
+    #tela-sucesso h2 {
+        color: #2c7d59;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    #tela-sucesso p {
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    #tela-sucesso button {
+        background-color: #2c7d59;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #tela-sucesso button:hover {
+        background-color: #245d45;
+    }
+
+    .confetti-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .confetti {
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        background-color: red;
+        opacity: 0;
+        animation: fall 2s linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(100vh) rotate(360deg);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .grade-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        width: 140vmin;
+        height: 90vmin;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    #inicio {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #casa1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #casa2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #casa3 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #casa4 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    #casa5 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #desafio1 {
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+    }
+
+    #casa6 {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #casa7 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #casa8 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #desafio2 {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    #casa9 {
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+    }
+
+    #casa10 {
+        grid-column: 6 / 7;
+        grid-row: 2 / 3;
+    }
+
+    #casa11 {
+        grid-column: 6 / 7;
+        grid-row: 3 / 4;
+    }
+
+    #desafio3 {
+        grid-column: 6 / 7;
+        grid-row: 4 / 5;
+    }
+
+    #casa12 {
+        grid-column: 6 / 7;
+        grid-row: 5 / 6;
+    }
+
+    #casa13 {
+        grid-column: 7 / 8;
+        grid-row: 5 / 6;
+    }
+
+    #casa14 {
+        grid-column: 8 / 9;
+        grid-row: 5 / 6;
+    }
+
+    #casa15 {
+        grid-column: 8 / 9;
+        grid-row: 4 / 5;
+    }
+
+    #casa16 {
+        grid-column: 8 / 9;
+        grid-row: 3 / 4;
+    }
+
+    #casa17 {
+        grid-column: 8 / 9;
+        grid-row: 2 / 3;
+    }
+
+    #fim {
+        grid-column: 8 / 9;
+        grid-row: 1 / 2;
+    }
+
+    #marcador {
+        background-color: none;
+        border: none;
+        margin-left: 38px;
+        margin-top: 65px;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #quadrado {
+        grid-column: 4 / 6;
+        grid-row: 4 / 5;
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+}

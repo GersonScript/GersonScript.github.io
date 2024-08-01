@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo ODS QEST</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h1>Bem-vindo ao Jogo ODS QEST</h1>
+        <div class="ods-icones">
+            <img src="./img/casa2.png" alt="ODS 1">
+            <img src="./img/casa5.png" alt="ODS 4">
+            <img src="./img/casa13.png" alt="ODS 10">
+            <img src="./img/casa21.png" alt="ODS 17">
+        </div>
+        <button id="botaoComecar" onclick="comecarJogo()">Começar</button>
+        <button onclick="login()">Criar conta</button>
+        <button id="botaoAgenda" onclick="abrirAgenda()">Conheça Agenda 2030</button>
+        <button id="botaoRegras" onclick="abrirRegras()">Regras e como Jogar o Jogo</button>
+    </div>
+
+    <div class="alerta-fundo" id="fundoAlerta">
+        <div class="alerta-caixa">
+            <p>Para um bom desempenho no jogo, é importante que você tenha visitado o site da Agenda 2030 e lido as
+                regras do jogo.</p>
+            <button onclick="fecharAlerta()">OK</button>
+        </div>
+    </div>
+
+    <div id="fundo">
+        <div id="configuracoes">
+            <h2>Configurações de Jogo</h2>
+            <button onclick="iniciarJogo('amigo')">Jogar com Amigos</button>
+            <button onclick="iniciarJogo('robo')">Jogar contra Robôs</button>
+            <button onclick="iniciarJogo('solo')">Jogar Solo</button>
+            <div id="form-jogo">
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

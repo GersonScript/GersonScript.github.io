@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Jogo Educacional</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: url('../img/logo.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+            color: #f1c40f;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #ecf0f1;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ecf0f1;
+            border-radius: 8px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            font-size: 1rem;
+        }
+
+        input::placeholder {
+            color: #bdc3c7;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #27ae60;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+            transform: scale(1.02);
+        }
+
+        .form-group img {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 50px;
+            height: 50px;
+        }
+
+        .form-group p {
+            text-align: center;
+            color: #ecf0f1;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Criar Conta</h1>
+        <form action="./php/registros.php" method="post">
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nome de Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="municipio">Município:</label>
+                <input type="text" id="municipio" name="municipio" placeholder="Digite seu município" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione seu estado</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="escola">Nome da Escola:</label>
+                <input type="text" id="escola" name="escola" placeholder="Digite o nome da escola" required>
+            </div>
+            <div class="form-group">
+                <label for="ano">Ano na Escola:</label>
+                <select id="ano" name="ano" required>
+                    <option value="1º Ano do Fundamental">1º Ano do Fundamental</option>
+                    <option value="2º Ano do Fundamental">2º Ano do Fundamental</option>
+                    <option value="3º Ano do Fundamental">3º Ano do Fundamental</option>
+                    <option value="4º Ano do Fundamental">4º Ano do Fundamental</option>
+                    <option value="5º Ano do Fundamental">5º Ano do Fundamental</option>
+                    <option value="6º Ano do Fundamental">6º Ano do Fundamental</option>
+                    <option value="7º Ano do Fundamental">7º Ano do Fundamental</option>
+                    <option value="8º Ano do Fundamental">8º Ano do Fundamental</option>
+                    <option value="9º Ano do Fundamental">9º Ano do Fundamental</option>
+                    <option value="1º Ano do Médio">1º Ano do Médio</option>
+                    <option value="2º Ano do Médio">2º Ano do Médio</option>
+                    <option value="3º Ano do Médio">3º Ano do Médio</option>
+                </select>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+
+</html>
