@@ -1,4 +1,5 @@
 let alertaExibida = false;
+
 document.getElementById("fundo").style.display = "none";
 
 function abrirAgenda() {
@@ -48,5 +49,9 @@ function iniciarJogo(tipo) {
         form.innerHTML += '<label>Nível de dificuldade:</label><select><option value="fácil">Fácil</option><option value="médio">Médio</option><option value="difícil">Difícil</option></select>';
     } else if (tipo === 'solo') {
         form.innerHTML = '<p>Iniciando jogo solo...</p>';
+        setTimeout(() => {
+            window.location.href = '../jogo/jogo.html';
+        })
+
     }
 }
