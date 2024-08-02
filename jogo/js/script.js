@@ -14,7 +14,7 @@ function comecarJogo() {
     const fundo = document.getElementById("fundo");
     fundo.style.display = "flex"; // Mostra o fundo de configurações
 }
-
+//Mostra alerta
 function mostrarAlerta() {
     document.getElementById('fundoAlerta').style.display = 'flex';
 }
