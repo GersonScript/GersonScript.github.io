@@ -7,7 +7,7 @@ function abrirAgenda() {
 }
 
 function abrirRegras() {
-    window.location.href = './regras.html';
+    window.location.href = '../regras.html';
 }
 
 function comecarJogo() {
@@ -25,7 +25,7 @@ function fecharAlerta() {
 }
 
 function login() {
-    window.location.href = './registro.html';
+    window.location.href = '../registro.html';
 }
 
 function iniciarJogo(tipo) {
