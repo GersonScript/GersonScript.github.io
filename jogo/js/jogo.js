@@ -239,14 +239,6 @@ function processarSorteio(selectedMessage) {
     }
 }
 
-function configurarEstilosMarcador(posicao) {
-    // Adicione a lógica para atualizar os estilos do marcador com base na nova posição
-}
-
-function configurarEstilosMarcadorVoltarCasa(posicao) {
-    // Adicione a lógica para atualizar os estilos do marcador com base na posição de volta
-}
-
 function mostrarTelaSucesso() {
     // Adicione a lógica para mostrar a tela de sucesso quando o jogador chega ao final
 }
